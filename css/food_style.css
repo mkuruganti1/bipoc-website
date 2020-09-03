@@ -1,0 +1,82 @@
+/* #mapid {
+    width: 100px;
+    height: auto;
+    position: relative;
+} */
+
+body {
+    height: 100%;
+} 
+
+#mapid {
+    height: 50%;
+    width: 90%;
+    background-color: #3e606f;
+    margin: auto;
+    z-index: 1;
+  }
+  
+  .leaflet-container {
+    height: 100%;
+    width: 100%;
+  }
+  
+  .leaflet-div-icon {
+    width: 0 !important;
+    height: 0 !important;
+  }
+  
+  .leaflet-popup__title {
+    text-align: center;
+  }
+  
+  .leaflet-popup__image {
+    width: inherit;
+    min-width: 300px;
+  }
+  
+  #food_area {
+    width: 90%;
+    height: 50%;
+    /* border: 1px solid black; */
+    margin: auto;
+  }
+
+  #food_area h1,h2,h3,h4,h5,h6 {
+    text-align: center;
+    color: mediumturquoise;
+    padding-top: 20px;
+    padding-bottom: 0px;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 1em;
+}
+
+  .place_container {
+    padding-right: 40px;
+  }
+
+ul,li {
+  margin: auto;
+  list-style-type: none;
+  padding-left: 0; 
+  padding-bottom: 10px;
+}
+
+p {
+  font-size: 20px;
+  color:slategray;
+  font-weight: 900;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color:mediumturquoise;
+}
