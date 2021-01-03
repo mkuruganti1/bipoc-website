@@ -1,0 +1,131 @@
+/* background color for the page */
+
+body {
+    background-color: mintcream;
+    margin: 0;
+}
+
+/* ------------------------ navigation bar ---------------------- */
+
+.navigation_bar {
+    overflow: hidden;
+    background-color: slategrey;
+}
+
+.navigation_bar a {
+    float: left;
+    text-align: center;
+    padding: 15px 25px;
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+}
+
+.navigation_bar a.active {
+    background-color: mediumturquoise;
+    color: white;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbutton {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 15px 25px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.navigation_bar a:hover, .dropdown:hover .dropbutton{
+    background-color:  rgb(158, 177, 197);
+    color: black;
+}
+
+.dropdown .dropdown_content {
+    display: none;
+    position: absolute;
+    background-color: lightslategray;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px;
+    z-index: 2;
+}
+
+.dropdown_content a {
+    float: none;
+    color: white;
+    padding: 15px 25px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown .dropdown_content a:hover {
+    background-color:rgb(158, 177, 197);
+}
+
+.dropdown .dropdown_content a.active {
+    background-color: mediumturquoise;
+    color: white;
+}
+
+.dropdown:hover .dropdown_content {
+    display: block;
+}
+
+/* ------------------------ navigation bar ---------------------- */
+
+/* webpage title heading */
+
+h1 {
+    margin-top: 20px;
+    text-align: center;
+    color: mediumturquoise;
+    font-size: 40px;
+    font-family: Georgia;
+}
+
+.webpage_title {
+    padding-left: 40px
+}
+
+/* main content on page --> mainly spacing */
+
+.main_content {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+#main_content_books {
+    margin-right: 0px;
+}
+
+#home_page body, html{
+    height: 100%;
+    margin: 0;
+}
+
+#home_page .main_content h2,h3,h4,h5,h6 {
+    color: mediumturquoise;
+}
+
+#home_page .main_content p {
+    color: black;
+    font-weight: bold;
+}
+
+#home_page .main_content a {
+    text-decoration: none;
+    color: slategray;
+  }
+  
+  #home_page .main_content a:hover {
+    color:mediumturquoise;
+  }
+
+
