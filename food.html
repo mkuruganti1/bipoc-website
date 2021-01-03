@@ -166,9 +166,11 @@
                 .addTo(myMap);
         }
 
-        // marker.on('click', function (e) {
-        //     myMap.setView([e.latlng.lat, e.latlng.lng], 10);
-        // });
+        myMap.on('popupopen', function(e) {
+            var px = myMap.project(e.target.popup.latlng); // find the pixel location on the map where the popup anchor i
+            px.y -= e.target._popup._container.clientHeight/2;
+            myMap.flyTo(myMap.unproject(px), 16); // pan to new center
+        });
 
 
     </script>
